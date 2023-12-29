@@ -16,21 +16,49 @@
   --blue-gradient:linear-gradient(90deg, rgba(175, 175, 227, 1) 0%, rgba(123, 106, 255, 1) 50%, rgba(217, 76, 111, 1) 100%);
   --card-shadow: 0px 10px 30px -10px rgba(138, 139, 141, 0.519);
   --footer-gradient: linear-gradient(90deg, rgba(135, 44, 207, 1) 0%, rgba(227, 108, 139, 0.97) 50%, rgba(243, 36, 36, 1) 100%);
+     --background:linear-gradient(90deg, #b72a7c 10%, #827792 36%, #081e36 87%);
+     
 
 }
 
 * {
   scroll-behavior: smooth;
+ 
 }
 
-html{
-  overflow: hidden;
-}
 
 .nav-shadow-box{
   box-shadow: var(--card-shadow);
 }
 
+.navbar-active:hover{
+  background-color:#f20e0e;
+  color: #ffffff;
+}
+
+.btn-bg{
+  background-color: #d5ab55;
+}
+
+.search-input{
+  outline: 2px solid transparent;
+  transition: outline 0.3s ease;
+}
+
+.search-input:hover{
+  outline: 2px solid #0808fe;
+}
+
+.shoe-detail:hover{
+  background-color: #d5ab55;
+  transition: all 0.3s  ease-in-out;
+}
+
+
+
+.star{
+  color: #d5ab55;
+}
 
 .text-gradient {
   background:linear-gradient(90deg, #b72a7c 2%, #081e36 55%);
@@ -39,6 +67,14 @@ html{
   background-clip: text;
   text-fill-color: transparent;
 }
+
+ .logo-gradient{
+background:linear-gradient(80deg, #b72a7c 0%,#081e36 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}  
 
 .bg-blue-gradient {
   background: linear-gradient(
@@ -61,11 +97,23 @@ html{
 }
 
 .transition {
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
+}
+
+.fontAwesome-blue{
+  color: #1877F2 ;
+}
+
+.fontAwesome-orange{
+ color: #E1306C;
 }
 
 .btn:hover{
   box-shadow: none;
+}
+
+.btn-disable:disabled{
+  background: gray;
 }
 
 .good{
@@ -81,23 +129,3 @@ html{
 }
 
 
-
-/* 
-.bg-black-gradient {
-  background: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-}
-
-; */
-
-/* 
-.feature-card:hover {
-  background: var(--black-gradient);
-  box-shadow: var(--card-shadow);
-} */
-
-  

@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         primary: "#0808fe",
         secondary: "#f0f5ff",
         gray: "#ced4da",
-        dimWhite:"#fff",
         dimBlack: "#11101d",
-        tertiary: "",
+        tertiary: "#8e8e91",
+        liteBlue: "#d8edff",
       },
       fontFamily: {
         cormorant: ["Cormorant Upright', serif ,'Open Sans', sans-serif"],
@@ -24,14 +26,5 @@ export default {
       xl: "1700px",
     },
   },
-  plugins: [],
-};
-
-
-
-
-
-
-
-
-
+  plugins: [require("tailwind-scrollbar")],
+}); 

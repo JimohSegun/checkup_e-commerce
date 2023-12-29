@@ -4,9 +4,10 @@ import {Header, Footer} from "./index";
 
 
 const Layout = () => {
+ 
   return (
     <div>
-      <Header />
+      <Header  />
       <main>
         <Outlet />
       </main>
