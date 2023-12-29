@@ -1,5 +1,5 @@
 
-# I developed a contemporary e-commerce site with React.js and TypeScript, incorporating Tailwind for styling
+# I developed a contemporary e-commerce website with React.js and TypeScript, incorporating Tailwind for styling
 
 
 * Quick start
